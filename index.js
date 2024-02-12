@@ -22,11 +22,6 @@ app.get("/",async (req,res)=>{
 }
 );
 
-app.get("/home",async (req,res)=>{
-    res.render("home");
-}
-);
-
 app.post("/login",async (req,res)=>{
     console.log(req.body);
     res.json({message:"Registration successful"});
